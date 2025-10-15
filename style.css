@@ -46,10 +46,13 @@ body {
         background-color: red;
     }
 
-    #smartphone {
-        display: block;
+    .smartphone {
+     display: inline;
+     }
+     .desktop {
+        display: none;
+        }
     }
-}
 
 @media(min-width: 501px) and (max-width:768px) {
     body {
@@ -59,15 +62,32 @@ body {
     #tablet {
         display: block;
     }
+
+    .smartphone {
+        display: none;
+    }
+
+    .desktop {
+        display: inline;
+    }
 }
+
 
 @media(min-width: 769px) and (max-width:1200px) {
     body {
         background-color: cyan;
     }
 
-    #normal {
+   #normal {
         display: block;
+    }
+
+    .smartphone {
+        display: none;
+    }
+
+    .desktop {
+        display: inline;
     }
 }
 
@@ -78,6 +98,14 @@ body {
 
     #widescreen {
         display: block;
+    }
+
+    .smartphone {
+        display: none;
+    }
+
+    .desktop {
+        display: inline;
     }
 }
 
